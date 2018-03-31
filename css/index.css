@@ -1,0 +1,44 @@
+.maincont{
+    background: #82c3a6;
+    padding: 10px 32px;
+    margin: auto; 
+ }
+ .maincont img{  
+    width: 85%;
+ }
+
+
+@keyframes animantionShadow{
+from{
+box-shadow: 2px 2px #02010a;
+}to{
+box-shadow: 2px 2px #82c3a6;
+}
+}
+
+.secondcont .paisaje{ 
+    -webkit-transition: rotateZ .4s ease-in-out;
+    -ms-transition: rotateZ .4s ease-in-out;
+    transition: rotateZ .4s ease-in-out; 
+}
+.secondcont .paisaje:hover{
+    transform:rotateZ(10deg);
+    -ms-transform:rotateZ(10deg);
+    -webkit-transform:rotateZ(10deg);
+    animation: animantionShadow 1s;
+   animation-fill-mode: forwards;
+}
+.secondcont .retrato{
+    transform: translate(0, 0);
+    -webkit-transition: traslate .4s ease-in-out;
+    -ms-transition: traslate .1s ease-in-out;
+    transition: traslate .1s ease-in-out; 
+    
+}
+.secondcont .retrato:hover {
+    transform:translate(20px, -5px);
+    -ms-transform:translate(20px, -5px);
+    -webkit-transform:translate(20px, -5px);
+    animation: animantionShadow 1s;
+    animation-fill-mode: forwards;
+}

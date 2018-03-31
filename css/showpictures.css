@@ -1,0 +1,30 @@
+@media (min-width: 991px){
+    .flexbox .flexrow {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+ }
+ }
+/* Overwrite */
+ .secondcont img {
+    width: 95%;
+    height: 100%;
+}
+
+.flexbox .flexrow:nth-child(1) img {
+    filter: blur(10px);
+}
+.flexbox .flexrow:nth-child(2) img {
+    filter: grayscale(100%);
+}
+.flexbox .flexrow:nth-child(3) img {
+    filter: sepia(100%);
+}
+.flexbox .flexrow:nth-child(4) img {
+    filter: grayscale(100%);
+}
+
+.flexbox .flexrow:nth-child(6) img {
+    filter: grayscale(100%);
+}
